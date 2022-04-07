@@ -272,7 +272,8 @@ const server = new ApolloServer({
         console.log(error)
       }
     }
-  }
+  },
+  playground: true
 })
 
 
