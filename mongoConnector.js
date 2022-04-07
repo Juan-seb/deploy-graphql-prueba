@@ -1,10 +1,9 @@
 import mongoose from 'mongoose'
+import dotenv from 'dotenv'
 
-const password = '7582333Felipe'
-const database = 'chanDB'
-const connectionString = `mongodb+srv://Juan-seb:${password}@cluster0.bcfah.mongodb.net/${database}?retryWrites=true&w=majority`
+dotenv.config()
 
-mongoose.connect(connectionString,{
+mongoose.connect(process.env.CONNECTION_MONGO,{
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
