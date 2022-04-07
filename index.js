@@ -273,7 +273,8 @@ const server = new ApolloServer({
       }
     }
   },
-  playground: true
+  playground: true,
+  introspection: true
 })
 
 
